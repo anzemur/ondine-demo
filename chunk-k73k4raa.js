@@ -1,0 +1,2 @@
+import{U as r,V as d,W as l,X as o,Y as s,_ as n,na as u,oa as i}from"./chunk-rn6v8db3.js";var c=class extends i{static{r(this,"WardleyValueConverter")}runCustomConverter(t,e,a){switch(t.name.toUpperCase()){case"LINK_LABEL":return e.substring(1).trim();default:return}}},m={parser:{ValueConverter:r(()=>new c,"ValueConverter")}};function v(t=s){let e=o(l(t),n),a=o(d({shared:e}),u,m);return e.ServiceRegistry.register(a),{shared:e,Wardley:a}}r(v,"createWardleyServices");
+export{m as G,v as H};

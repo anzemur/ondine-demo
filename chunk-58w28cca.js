@@ -1,0 +1,2 @@
+import{U as e,V as i,W as o,X as t,Y as n,_ as u,ca as d,pa as l,qa as s}from"./chunk-rn6v8db3.js";var c=class extends s{static{e(this,"GitGraphTokenBuilder")}constructor(){super(["gitGraph"])}},p={parser:{TokenBuilder:e(()=>new c,"TokenBuilder"),ValueConverter:e(()=>new l,"ValueConverter")}};function h(G=n){let r=t(o(G),u),a=t(i({shared:r}),d,p);return r.ServiceRegistry.register(a),{shared:r,GitGraph:a}}e(h,"createGitGraphServices");
+export{p as S,h as T};

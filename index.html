@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>Diagrams · Ondine demo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&family=JetBrains+Mono:wght@500&family=Jersey+10&family=Noto+Sans+SC:wght@400;600&family=Noto+Sans+Arabic:wght@400;600&display=swap" />
+    
+  <link rel="stylesheet" crossorigin href="./chunk-f2vqscak.css"><script type="module" crossorigin src="./chunk-h32jmzch.js"></script></head>
+  <body>
+    <!-- Radar's finishes as SVG paint, so Ondine's nodes can wear them -->
+    <svg class="paints" aria-hidden="true" focusable="false">
+      <defs>
+        <linearGradient id="rd-glass" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" class="stop-glass-top" />
+          <stop offset="1" class="stop-glass-bottom" />
+        </linearGradient>
+        <linearGradient id="rd-rim" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" class="stop-rim-top" />
+          <stop offset="0.4" class="stop-rim-middle" />
+          <stop offset="1" class="stop-rim-bottom" />
+        </linearGradient>
+        <linearGradient id="rd-brand" x1="0" y1="0" x2="1" y2="0">
+          <stop offset="0" class="stop-brand-start" />
+          <stop offset="1" class="stop-brand-end" />
+        </linearGradient>
+        <radialGradient id="rd-orb" cx="0.32" cy="0.28" r="0.85">
+          <stop offset="0" class="stop-orb-light" />
+          <stop offset="0.45" class="stop-brand-end" />
+          <stop offset="1" class="stop-brand-start" />
+        </radialGradient>
+      </defs>
+    </svg>
+
+    <div class="glow" aria-hidden="true"></div>
+
+    <header class="topbar">
+      <div class="topbar-inner">
+        <div class="brand">
+          <span class="avatar" aria-hidden="true"></span>
+          <div>
+            <h1 class="title">Diagrams, <span class="accent">compiled</span></h1>
+            <div class="eyebrow">Ondine 0.0.1 in Astra chat</div>
+          </div>
+        </div>
+        <div class="controls">
+          <div class="tray" role="radiogroup" aria-label="Renderer" id="mode">
+            <span class="plate glass" aria-hidden="true"></span>
+            <button role="radio" data-mode="mermaid">Today</button>
+            <button role="radio" data-mode="ondine">Ondine</button>
+            <button role="radio" data-mode="compare">Compare</button>
+          </div>
+          <button class="icon-button glass" id="theme" aria-label="Switch theme" title="Switch theme"></button>
+        </div>
+      </div>
+      <nav class="chips" id="samples" aria-label="Examples"></nav>
+    </header>
+
+    <main class="chat" id="chat"></main>
+
+    <section class="numbers" aria-label="Measured on this page">
+      <div class="eyebrow">Measured on this page</div>
+      <dl class="stats" id="stats"></dl>
+    </section>
+
+    <footer class="dock glass">
+      <div class="dock-row">
+        <button class="button brand" id="replay">
+          <svg viewBox="0 0 256 256" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M240 128a15.74 15.74 0 0 1-7.6 13.51L88.32 229.65a16 16 0 0 1-16.2.3A15.86 15.86 0 0 1 64 216.13V39.87a15.86 15.86 0 0 1 8.12-13.82 16 16 0 0 1 16.2.3l144.08 88.14A15.74 15.74 0 0 1 240 128Z"/></svg>
+          Replay as streaming
+        </button>
+        <button class="button weak" id="playground-toggle">Edit diagram</button>
+        <div class="font-pick">
+          <span class="eyebrow">Labels</span>
+          <div class="tray small" role="radiogroup" aria-label="Ondine label font" id="font">
+            <span class="plate glass" aria-hidden="true"></span>
+            <button role="radio" data-font="sans">Figtree</button>
+            <button role="radio" data-font="mono">Mono</button>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    
+  </body>
+</html>
